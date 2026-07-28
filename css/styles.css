@@ -27,14 +27,14 @@ img { max-width: 100%; display: block; }
   color: #ffffff;
   text-align: center;
   font-size: 0.85rem;
-  padding: 0.4rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .main-header {
   display: flex;
   align-items: center;
   justify-content: center;   /* logo centrado */
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
   border-bottom: 1px solid var(--border-soft);
   position: relative;
 }
@@ -93,15 +93,16 @@ img { max-width: 100%; display: block; }
 .main-nav {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  padding: 0.5rem 1rem;
-  background: #000000;
+  gap: 3rem;
+  padding: 0.7rem 2.5rem;
+  background: #020202;
 }
 
 .nav-link {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   font-size: 0.95rem;
+  letter-spacing: 0.02em;
 }
 
 /* En móvil ocultamos la barra y usaremos el menú hamburguer */
@@ -177,7 +178,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.78rem;
 }
 .section-header h2 {
-  font-family: "Georgia", "Times New Roman", serif;
+  font-family: "Maharlika", "Maharlika";
   font-size: 1.9rem;
   margin: 0.3rem 0 0.3rem;
 }
@@ -337,24 +338,27 @@ img { max-width: 100%; display: block; }
   justify-content: center;
 }
 
+/* Todos los cuadros con el mismo tamaño */
 .por-que-item {
-  width: 180px;
-  height: 150px;
-  border-radius: 0px;
-  background-size: cover;
+  width: 220px;              /* ajusta aquí el ancho que quieres */
+  height: 140px;             /* y aquí el alto */
+  border-radius: 20px;
+  background-size: contain;  /* o cover si prefieres que llenen */
   background-position: center;
+  background-repeat: no-repeat;
 }
-/* 1) Imagen 15.jpg */
+
+/* 1) 15.jpg */
 .por-que-15 {
   background-image: url("../img/15.jpg");
 }
 
-/* 2) Imagen anesp.jpg */
+/* 2) anesp.jpg */
 .por-que-anesp {
   background-image: url("../img/anesp.jpg");
 }
 
-/* 3) Imagen sobre.jpg */
+/* 3) sobre.jpg */
 .por-que-sobre {
   background-image: url("../img/sobre.jpg");
 }
@@ -459,8 +463,8 @@ img { max-width: 100%; display: block; }
 .main-nav {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  padding: 0.5rem 1rem;
+  gap: 5rem;
+  padding: 0.75rem 3rem;
   background: #000000;
 }
 

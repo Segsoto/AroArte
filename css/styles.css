@@ -568,3 +568,9 @@ img { max-width: 100%; display: block; }
   background-size: cover;
   background-position: center;
 }
+
+.media-16 {
+  background-image: url("../img/16.jpg");
+  background-size: cover;
+  background-position: center;
+}

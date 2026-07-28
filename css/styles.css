@@ -160,8 +160,10 @@ img { max-width: 100%; display: block; }
   width: 220px;
   height: 120px;
   border-radius: var(--radius-md);
-  background: linear-gradient(145deg, #444444, #bbbbbb);
-  box-shadow: var(--shadow-soft);
+  background-image: url("../img/16bg.jpg");  /* ojo: ../ porque styles.css está dentro de css/ */
+  background-size: cover;
+  background-position: center;
+   
 }
 
 .section-header {

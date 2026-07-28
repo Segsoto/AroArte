@@ -50,3 +50,25 @@
     }
   });
 })();
+
+
+// Botones "Cotizar por WhatsApp" con mensaje personalizado
+(function () {
+  const buttons = document.querySelectorAll('.producto-card .btn-outline');
+  const phone = '50660121581'; // número en formato internacional
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const card = btn.closest('.producto-card');
+      if (!card) return;
+
+      const titleEl = card.querySelector('h3');
+      const ringName = titleEl ? titleEl.textContent.trim() : 'el anillo';
+
+      const message = `Hola, estoy interesado en cotizar el anillo ${ringName}`;
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+      window.open(url, '_blank');
+    });
+  });
+})();

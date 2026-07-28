@@ -290,9 +290,11 @@ img { max-width: 100%; display: block; }
 }
 .sobre-media {
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 2/2;
   border-radius: 14px;
-  background: radial-gradient(circle at 30% 20%, #ffe2b5, #f0c59a);
+  background-image: url("../img/imagennino.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .sobre-copy p {
   font-size: 0.95rem;
@@ -333,6 +335,35 @@ img { max-width: 100%; display: block; }
   display: flex;
   gap: 1.5rem;
   justify-content: center;
+}
+
+.por-que-item {
+  width: 180px;
+  height: 150px;
+  border-radius: 0px;
+  background-size: cover;
+  background-position: center;
+}
+/* 1) Imagen 15.jpg */
+.por-que-15 {
+  background-image: url("../img/15.jpg");
+}
+
+/* 2) Imagen anesp.jpg */
+.por-que-anesp {
+  background-image: url("../img/anesp.jpg");
+}
+
+/* 3) Imagen sobre.jpg */
+.por-que-sobre {
+  background-image: url("../img/sobre.jpg");
+}
+
+@media (max-width: 768px) {
+  .por-que-media {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .por-que-ring,
 .por-que-pouch {

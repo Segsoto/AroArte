@@ -36,7 +36,7 @@ img { max-width: 100%; display: block; }
   justify-content: center;   /* logo centrado */
   padding: 0.75rem 1.5rem;
   border-bottom: 1px solid var(--border-soft);
-  position: relative;        /* para posicionar el hamburguer */
+  position: relative;
 }
 
 .brand-logo img {
@@ -44,6 +44,7 @@ img { max-width: 100%; display: block; }
   display: block;
 }
 
+/* Hamburguer a la derecha */
 .nav-toggle {
   border: none;
   background: transparent;
@@ -53,7 +54,7 @@ img { max-width: 100%; display: block; }
   padding: 4px;
   cursor: pointer;
   position: absolute;
-  left: 1.5rem;
+  right: 1.5rem;             /* lado derecho del header */
 }
 
 .nav-toggle span {
@@ -88,6 +89,7 @@ img { max-width: 100%; display: block; }
   cursor: pointer;
 }
 
+/* Barra desktop (igual que antes) */
 .main-nav {
   display: flex;
   justify-content: center;
@@ -100,6 +102,13 @@ img { max-width: 100%; display: block; }
   color: #ffffff;
   text-decoration: none;
   font-size: 0.95rem;
+}
+
+/* En móvil ocultamos la barra y usaremos el menú hamburguer */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
 }
 
 .hero {
@@ -405,6 +414,157 @@ img { max-width: 100%; display: block; }
 }
 .media-onda {
   background-image: url("img/hero-ring.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+  background: #000000;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* En móvil ocultamos la barra y usaremos el menú hamburguer */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+}
+
+
+/* Overlay móvil profesional */
+.mobile-menu {
+  position: fixed;
+  inset: 0;                      /* top/right/bottom/left: 0 */
+  background: rgba(0, 0, 0, 0.94);
+  color: #ffffff;
+  display: none;                 /* se controla con JS */
+  z-index: 1000;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.mobile-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+}
+
+/* En móvil: ocultar barra y usar overlay */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+}
+ 
+
+.media-onda {
+  background-image: url("../img/1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-everest {
+  background-image: url("../img/2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-lesus {
+  background-image: url("../img/3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-eterno {
+  background-image: url("../img/4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-neo {
+  background-image: url("../img/5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-prisma {
+  background-image: url("../img/6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-vertice {
+  background-image: url("../img/7.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-encrucijada {
+  background-image: url("../img/8.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* y así hasta el anillo 15 */
+.media-9 {
+  background-image: url("../img/9.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-10 {
+  background-image: url("../img/10.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-11 {
+  background-image: url("../img/11.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-12 {
+  background-image: url("../img/12.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-13 {
+  background-image: url("../img/13.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-14 {
+  background-image: url("../img/14.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.media-15 {
+  background-image: url("../img/15.jpg");
   background-size: cover;
   background-position: center;
 }
